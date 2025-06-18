@@ -67,6 +67,9 @@ This is a common integration issue where webhooks are not firing as expected. Po
 
 ## Solution
 
+<details>
+<summary><strong>Click to show/hide the solution</strong></summary>
+
 **Root Cause:**  
 The webhook was configured for the wrong event type (`candidate.created` instead of `candidate.status.changed`).
 
@@ -77,6 +80,7 @@ The webhook was configured for the wrong event type (`candidate.created` instead
 3. Monitored subsequent candidate status changes to ensure events were received.
 4. Documented the troubleshooting process and updated internal knowledge base for future reference.
 
+</details>
 ---
 
 ## Key Takeaways & Best Practices
